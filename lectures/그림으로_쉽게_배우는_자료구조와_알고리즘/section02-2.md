@@ -50,7 +50,23 @@
 3. `front`: 데이터 참조
 4. `isEmpty`: 비었는지 체크
 
+### 📌 덱(Deque)
+
+#### ✅ 개념
+
+데이터의 삽입과 제거를 `head`와 `tail`에서 자유롭게 가능하다.
+
+#### ✅ 구현
+
+**덱의 추상자료형**
+
+1. `printAll`: 모든 데이터 출력
+2. `addFirst`: `head`에 데이터 삽입
+3. `removeFirst`: `head`에서 데이터 제거
+4. `addLast`: `tail`에 데이터 삽입
+5. `removeLast`: `tail`에 데이터 제거
+6. `isEmpty`: 리스트 비었는지 체크
+
 ### 📌 더 찾아본 점
 
 출처: [그림으로 쉽게 배우는 자료구조와 알고리즘](https://www.inflearn.com/course/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B8%B0%EB%B3%B8/dashboard)
-ㅍ
