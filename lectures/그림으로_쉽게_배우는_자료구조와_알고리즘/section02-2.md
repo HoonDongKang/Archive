@@ -67,6 +67,4 @@
 5. `removeLast`: `tail`에 데이터 제거
 6. `isEmpty`: 리스트 비었는지 체크
 
-### 📌 더 찾아본 점
-
 출처: [그림으로 쉽게 배우는 자료구조와 알고리즘](https://www.inflearn.com/course/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B8%B0%EB%B3%B8/dashboard)
