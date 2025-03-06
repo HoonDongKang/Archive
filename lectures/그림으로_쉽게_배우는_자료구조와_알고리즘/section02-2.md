@@ -113,5 +113,6 @@
         1. **선형 탐색(Linear Probing)**: `index`로부터 `n`만큼 이동하여 빈 버킷 검색
         2. **제곱 탐색(Quadratic Probing)**: `index`로부터 제곱수만큼 이동하여 빈 버킷 검색(+1, +4, +9,,)
         3. **이중 해시(Doouble Hashing)**: 다른 해시함수를 한 번 더 적용
+    - [선형 탐색으로 구현해본 해시 테이블](https://github.com/HoonDongKang/Archive/blob/main/lectures/%EA%B7%B8%EB%A6%BC%EC%9C%BC%EB%A1%9C_%EC%89%BD%EA%B2%8C_%EB%B0%B0%EC%9A%B0%EB%8A%94_%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/src/hashTable.mjs)
 
 출처: [그림으로 쉽게 배우는 자료구조와 알고리즘](https://www.inflearn.com/course/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B8%B0%EB%B3%B8/dashboard)
