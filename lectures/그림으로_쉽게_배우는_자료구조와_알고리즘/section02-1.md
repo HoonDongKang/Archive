@@ -84,9 +84,11 @@ arr[6] = 7;
     - `push()`, `pop()`, `map()` 등 배열에서 사용가능한 메서드를 제공한다.
 
 **❓ `typeof([])`는 왜 `object`로 결과가 나올까?**
+
 ✅ `typeof` 연산자는 매개변수의 자료형이 **원시 값**인지, **참조 값**인지를 구분해준다. 자바스크립트 배열의 `prototype`을 보면 `Array.prototype`을 갖고 그 상위 프로토타입은 `Object.prototype`을 갖는다. 그렇기에 결국 배열은 객체의 프로토타입을 상속받고 있기에 참조값이며 `object`가 반환된다.
 
 **❓ 원시 값, 참조 값이 뭐야?**
+
 ✅ **원시 값(Primitive Value)**은 값이 변경될 수 없고(immutable), 직접 값이 저장되는 데이터 형태를 의미한다. 새로운 값을 변수에 저장하면 메모리 주소에 해당 값이 그대로 저장되며 변수에 값을 변경시키면 새로운 메모리에 값을 할당시킨다. 즉, 기존 메모리 주소에 저장된 값을 변경시킬 수 없다.
 
 -   `undefined`, `boolean`, `number`, `string` ,,
@@ -96,6 +98,7 @@ arr[6] = 7;
 -   `Object`, `Array`, `Function`
 
 **❓ `typeof([])`는 그럼 왜 배열 메서드를 사용할 수 있는가?**
+
 ✅ `arr → Array.prototype → Object.prototype → null` 이런 프로토타입 체인을 갖고 있기 때문에, 결국 배열은 `Array.prototype`에서 제공하는 메서드를 상속받아서 사용할 수 있다.
 
 출처: [그림으로 쉽게 배우는 자료구조와 알고리즘](https://www.inflearn.com/course/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B8%B0%EB%B3%B8/dashboard)
