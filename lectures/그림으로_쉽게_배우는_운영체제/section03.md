@@ -192,6 +192,7 @@ P2 1초 실행 후 I/O작업
 **❓추가적인 스케쥴링 방식?**
 
 ✅
+![process_scheduling](./public/process_scheduling.png)
 
 1. **SRTF**(Shortest-Remaining-Time First)
 
