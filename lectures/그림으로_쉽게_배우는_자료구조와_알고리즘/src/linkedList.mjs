@@ -90,7 +90,7 @@ class LinkedList {
     }
 
     deleteLast() {
-        this.deleteAt(this.count - 1);
+        return this.deleteAt(this.count - 1);
     }
 
     getNodeAt(index) {
