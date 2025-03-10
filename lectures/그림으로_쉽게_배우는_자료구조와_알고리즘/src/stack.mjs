@@ -26,9 +26,8 @@ class Stack {
     }
 
     printAll() {
-        this.list.printAll()
+        this.list.printAll();
     }
-
 }
 
 class ReverseStack {
@@ -36,7 +35,7 @@ class ReverseStack {
         this.list = new LinkedList();
     }
 
-    push(data){
+    push(data) {
         this.list.insertLast(data);
     }
 
@@ -49,7 +48,7 @@ class ReverseStack {
     }
 
     peek() {
-        return this.list.getNodeAt(this.list.count-1)
+        return this.list.getNodeAt(this.list.count - 1);
     }
 
     isEmpty() {
@@ -57,9 +56,8 @@ class ReverseStack {
     }
 
     printAll() {
-        this.list.printAll()
+        this.list.printAll();
     }
-
 }
 
 export { Stack, ReverseStack };

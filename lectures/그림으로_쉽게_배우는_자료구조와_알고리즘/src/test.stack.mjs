@@ -53,7 +53,6 @@ console.log(stack.pop().data);
 console.log(stack.pop().data);
 console.log(stack.pop().data);
 
-
 console.log("=======ReverseStack input=======");
 reverseStack.push(1);
 reverseStack.push(2);
