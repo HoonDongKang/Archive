@@ -35,8 +35,112 @@
 
 ### 📌 더 찾아본 점
 
-**❓ **
+**❓ 하노이 탑**
 
-✅
+✅ 재귀적으로 생각해봐야할 부분
+
+1. 마지막 원판(count) 위의 모든 원판은 temp로 가야한다. (to -> temp)
+2. 마지막 원판은 to 로 간다
+3. temp에 있는 모든 원판은 to로 가야한다.(from -> temp, temp -> from)
+
+```javascript
+// 마지막 원판(count) 위의 모든 원판은 temp로 가야한다. (to -> temp)
+// hanoi(count - 1, from, temp, to);
+{
+    3 A C B
+    {
+        2 A B C
+        {
+            1 A C B
+            console.log( 1 block from A to C)
+        }
+        console.log( 2 block from A to B)
+        {
+            1 C B A
+            console.log(1 block from C to B)
+        }
+    }
+    console.log(3 block from A to C)
+    {
+        2 B C A
+        {
+            1 B A C
+            console.log( 1 block from B to A)
+        }
+        console.log(2 block from B to C)
+        {
+            1 A C B
+            console.log(1 block from A to C)
+        }
+    }
+}
+```
+
+**❓ 하노이 탑 (count: 4) 진행과정**
+
+```javascript
+// 마지막 원판(count) 위의 모든 원판은 temp로 가야한다. (to -> temp)
+// hanoi(count - 1, from, temp, to);
+{
+    4 A C B
+    {
+        3 A B C
+        {
+            2 A C B
+            {
+                1 A B C
+                console.log(1 block from A to B)
+            }
+            console.log(2 block from A to C)
+            {
+                1  B C A
+                console.log(1 block from B to C)
+            }
+        }
+        console.log(3 block from A to B)
+        {
+            2 C B A
+            {
+                1 C A B
+                console.log(1 block from C to A)
+            }
+            console.log(2 block from C to B)
+            {
+                1 A B C
+                console.log(1 block from A to B)
+            }
+        }
+    }
+    console.log(4 block from A to C)
+    {
+        3 B C A
+        {
+            2 B A C
+            {
+                1 B C A
+                console.log(1 block from B to C)
+            }
+            console.log(2 block from B to A)
+            {
+                1 C A B
+                console.log(1 block from C to A)
+            }
+        }
+        console.log(3 block from B to C)
+        {
+            2 A C B
+            {
+                1 A B C
+                console.log(1 block from A to B)
+            }
+            console.log(2 block from A to C)
+            {
+                1 B C A
+                console.log(1 block from B to C)
+            }
+        }
+    }
+}
+```
 
 출처: [그림으로 쉽게 배우는 자료구조와 알고리즘](https://www.inflearn.com/course/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B8%B0%EB%B3%B8/dashboard)
