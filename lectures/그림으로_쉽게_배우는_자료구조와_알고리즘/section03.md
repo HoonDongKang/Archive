@@ -44,10 +44,10 @@
 3. temp에 있는 모든 원판은 to로 가야한다.(from -> temp, temp -> from)
 
 ```javascript
-// 마지막 원판(count) 위의 모든 원판은 temp로 가야한다. (to -> temp)
-// hanoi(count - 1, from, temp, to);
 {
     3 A C B
+    // 1. 마지막 원판(count) 위의 모든 원판은 temp로 가야한다. (to -> temp)
+    // hanoi(count - 1, from, temp, to);
     {
         2 A B C
         {
@@ -60,7 +60,11 @@
             console.log(1 block from C to B)
         }
     }
+    //2. 마지막 원판은 to 로 간다
     console.log(3 block from A to C)
+
+    //3. temp에 있는 모든 원판은 to로 가야한다.(from -> temp, temp -> from)
+    // hanoi(count - 1, temp, to, from);
     {
         2 B C A
         {
