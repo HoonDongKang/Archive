@@ -69,6 +69,45 @@
 -   시간 복잡도 (O(nlogn)) / 최악의 경우 (O(n^2))
 -   병합 정렬보다 더 적은 메모리 사용으로 더 좋은 알고리즘이라고 판단
 
+### 📌 동적 프로그래밍 - 메모이제이션
+
+피보나치 수열- 이전 두 수를 무한하게 더하는 수
+
+재귀 함수를 실행하면서 중복되는 부분이 무수히 발생한다.
+
+-   계산 결과를 저장하고, 중복되는 계산은 저장된 값을 불러온다.
+-   속도가 빠른 대신, 메모리 공간 차지가 많아진다.
+
+```javascript
+function fibonacci(n) {
+    if (n == 0 || n == 1) return n;
+    return fibonacci(n - 1) + fibonacci(n - 2);
+}
+
+function fibonacci2(n, memo) {
+    if (n == 0 || n == 1) return n;
+
+    if (memo[n] == null) {
+        memo[n] = fibonacci2(n - 2, memo) + fibonacci2(n - 1, memo);
+    }
+
+    return memo[n];
+}
+
+console.time("first fibonacci");
+console.log(fibonacci(40));
+console.timeEnd("first fibonacci");
+
+console.time("second fibonacci");
+console.log(fibonacci2(40, {}));
+console.timeEnd("second fibonacci");
+
+//102334155
+//first fibonacci: 867.412ms
+//102334155
+//second fibonacci: 0.073ms
+```
+
 ### 📌 더 찾아본 점
 
 **❓ 하노이 탑**
