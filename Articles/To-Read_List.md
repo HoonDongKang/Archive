@@ -4,6 +4,7 @@
 2. [HTTP/3](https://http3-explained.haxx.se/): HTTP3에 대한 설명
 3. [개발자의 학습과 성장](https://kciter.so/posts/developers-learning-and-growth/): 학습법에 대한 이론과 성장 방법 ✅
 4. [ai-2027](https://ai-2027.com/): 2027 AI 전망
+5. [Deep dive in Nodejs internal](https://medium.com/@manikmudholkar831995/the-v8-javascript-engine-d1434ca77c96): Node.js deep dive
 
 ### 📗 Books
 
