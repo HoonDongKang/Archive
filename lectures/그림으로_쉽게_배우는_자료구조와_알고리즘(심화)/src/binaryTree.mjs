@@ -40,17 +40,29 @@ class BinaryTree {
     inOrderTraversal(tree) {
         if (tree == null) return;
 
-        this.preOrderTraversal(tree.getLeftSubTree());
+        this.inOrderTraversal(tree.getLeftSubTree());
         console.log(tree.data);
-        this.preOrderTraversal(tree.getRightSubTree());
+        this.inOrderTraversal(tree.getRightSubTree());
     }
 
     postOrderTraversal(tree) {
         if (tree == null) return;
 
-        this.preOrderTraversal(tree.getLeftSubTree());
-        this.preOrderTraversal(tree.getRightSubTree());
+        this.postOrderTraversal(tree.getLeftSubTree());
+        this.postOrderTraversal(tree.getRightSubTree());
         console.log(tree.data);
+    }
+
+    removeLeftSubTree() {
+        let deletingNode = this.getLeftSubTree();
+        this.setLeftSubTree(null);
+        return deletingNode;
+    }
+
+    removeRightSubTree() {
+        let deletingNode = this.getRightSubTree();
+        this.setRightSubTree(null);
+        return deletingNode;
     }
 }
 
