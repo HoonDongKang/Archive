@@ -31,4 +31,10 @@
         2. 오른쪽 형제 노드가 없는 경우
             1. 루트 노드부터 가장 왼쪽 노드로 내려감
 
+### 📌 힙 정렬
+
+-   최소 힙에서 dequeue를 하면 오름 차순 정렬
+-   최대 힙에서 dequeue를 하면 내림 차순 정렬
+-   성능: O(nlogn)
+
 출처: [그림으로 쉽게 배우는 자료구조와 알고리즘 (심화편)](https://www.inflearn.com/course/%EA%B7%B8%EB%A6%BC%EC%9C%BC%EB%A1%9C-%EC%89%BD%EA%B2%8C-%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EC%8B%AC%ED%99%94/dashboard)
